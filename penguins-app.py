@@ -27,7 +27,7 @@ else:
         island = st.sidebar.selectbox('Islan', options=[
             'Biscoe', 'Dream', 'Torgersen'
         ])
-        sex = st.sidebar.selectbox('Sex', ['male', 'felame'])
+        sex = st.sidebar.selectbox('Sex', ['male', 'female'])
         bill_length_mm = st.sidebar.slider(
             'Bill length (mm)', 32.1, 59.6, 50.0)
         bill_depth_mm = st.sidebar.slider('Bill depth (mm)', 13.1, 21.5, 17.2)
