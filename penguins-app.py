@@ -35,14 +35,14 @@ else:
             'Flipper length (mm)', 172.0, 231.0, 201.0)
         body_mass_g = st.sidebar.slider(
             'Body mass (g)', 2700.0, 6300.0, 4207.0)
-
+        print(type(sex), type(island), type(bill_length_mm), type(flipper_length_mm), type(body_mass_g))
         data = {
             'sex': sex,
             'island': island,
-            'bill_length_mm': bill_length_mm,
-            'bill_depth_mm': bill_depth_mm,
-            'flipper_length_mm': flipper_length_mm,
-            'body_mass_g': body_mass_g,
+            'bill_length_mm': float(bill_length_mm),
+            'bill_depth_mm': float(bill_depth_mm),
+            'flipper_length_mm': float(flipper_length_mm),
+            'body_mass_g': float(body_mass_g),
         }
 
         return pd.DataFrame(data, index=[0])
